@@ -82,6 +82,18 @@ The repository includes:
 
 These resources allow the full experimental pipeline to be reproduced under identical settings.
 
+**Repository Structure**
+
+The repository contains the following main files:
+
+main.py – main training and evaluation pipeline
+qafs.py – implementation of quantum-aware feature selection
+qgnn.py – quantum graph neural network embedding module
+qsvm.py – quantum kernel and QSVM classifier
+config.yaml – hyperparameter configuration file
+requirements.txt – Python dependency list
+README.md – project documentation
+
 ---
 
 ## Repository Structure
