@@ -1,0 +1,31 @@
+# Configuration file for QGNN–QSVM Ransomware Detection Framework
+
+random_seed: 42
+
+dataset:
+  train_split: 0.7
+  test_split: 0.3
+  normalize_features: true
+
+qafs:
+  k_neighbors: 10
+  laplacian_top_features: 18
+  fidelity_threshold: 0.90
+
+graph:
+  correlation_threshold: 0.60
+
+qgnn:
+  num_qubits: 12
+  feature_map: pauli
+  feature_map_repetitions: 2
+  entanglement_layers: 2
+  measurement_basis: pauli_z
+
+qsvm:
+  kernel: quantum
+  regularization_C: 1.0
+
+simulation:
+  backend: statevector_simulator
+  framework: qiskit_aer
